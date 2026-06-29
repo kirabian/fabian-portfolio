@@ -2,7 +2,7 @@
 
 import { useState } from "react";
 import Image from "next/image";
-import { ExternalLink, Github, Mail, Download } from "lucide-react";
+import { ExternalLink, Mail, Download } from "lucide-react";
 import { motion } from "framer-motion";
 
 type Lang = "EN" | "ID";
