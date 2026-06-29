@@ -232,7 +232,7 @@ export default function Home() {
                   alt={proj.title} 
                   fill 
                   sizes="(max-width: 768px) 100vw, 50vw"
-                  className="object-cover grayscale group-hover:grayscale-0 group-hover:scale-105 transition-all duration-700 ease-out" 
+                  className="object-cover md:grayscale md:group-hover:grayscale-0 md:group-hover:scale-105 transition-all duration-700 ease-out" 
                 />
               </div>
               <div className="w-full md:w-1/2 flex flex-col justify-center">
