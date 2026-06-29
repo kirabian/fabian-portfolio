@@ -3,7 +3,7 @@
 import { useState } from "react";
 import Image from "next/image";
 import { ExternalLink, Mail, Download } from "lucide-react";
-import { motion } from "framer-motion";
+import { motion, Variants } from "framer-motion";
 
 type Lang = "EN" | "ID";
 
@@ -80,12 +80,12 @@ export default function Home() {
   const [lang, setLang] = useState<Lang>("EN");
   const t = translations[lang];
 
-  const fadeUp = {
+  const fadeUp: Variants = {
     hidden: { opacity: 0, y: 30 },
     visible: { opacity: 1, y: 0, transition: { duration: 0.8, ease: "easeOut" } }
   };
 
-  const staggerContainer = {
+  const staggerContainer: Variants = {
     hidden: { opacity: 0 },
     visible: {
       opacity: 1,
